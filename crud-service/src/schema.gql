@@ -1,0 +1,42 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Student {
+  id: Float!
+  name: String!
+  gender: String!
+  address: String!
+  mobileNumber: Float!
+  dateOfBirth: String!
+  age: Float!
+}
+
+type Query {
+  findAllStudents: [Student!]!
+}
+
+type Mutation {
+  createStudent(studentInput: StudentCreateDTO!): Student!
+  updateStudent(studentUpdate: StudentUpdateDTO!): Student!
+  deleteStudent(id: Float!): Student!
+}
+
+input StudentCreateDTO {
+  name: String!
+  gender: String!
+  address: String!
+  mobileNumber: Float!
+  dateOfBirth: String!
+  age: Float!
+}
+
+input StudentUpdateDTO {
+  id: Float!
+  name: String!
+  gender: String!
+  address: String!
+  mobileNumber: Float!
+  dateOfBirth: String!
+  age: Float!
+}
