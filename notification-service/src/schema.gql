@@ -1,0 +1,21 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Welcome {
+  message: String!
+}
+
+type Query {
+  welcome: Welcome!
+}
+
+type Mutation {
+  sendNotification(notification: Notification!): Welcome!
+}
+
+input Notification {
+  message: String!
+  status: Boolean!
+  crudType: String!
+}
